@@ -239,35 +239,30 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &kp SPACE &kp SPACE &kp S>;
-            label = "LEADER_LEADER";
         };
 
         parentesis_full: parentesis_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LPAR &kp RPAR>;
-            label = "PARENTESIS_FULL";
         };
 
         less_greater_full: less_greater_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LT &kp GT>;
-            label = "LESS_GREATER_FULL";
         };
 
         llaves_full: llaves_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBRC &kp RBRC>;
-            label = "LLAVES_FULL";
         };
 
         corchetes_full: corchetes_full {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp RBKT>;
-            label = "CORCHETES_FULL";
         };
     };
 
@@ -305,7 +300,6 @@
         paren_or_less_than: paren_or_less_than {
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
-            label = "PAREN_OR_LESS_THAN";
             bindings = <&kp LPAR>, <&kp LT>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
@@ -313,7 +307,6 @@
         paren_or_greather_than: paren_or_greather_than {
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
-            label = "PAREN_OR_GREATHER_THAN";
             bindings = <&kp RPAR>, <&kp GT>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
@@ -321,7 +314,6 @@
         lbkt_or_lbrc: lbkt_or_lbrc {
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
-            label = "lbkt_or_lbrc";
             bindings = <&kp LBKT>, <&kp LBRC>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
@@ -329,7 +321,6 @@
         rbkt_or_rbrc: rbkt_or_rbrc {
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
-            label = "rbkt_or_rbrc";
             bindings = <&kp RBKT>, <&kp RBRC>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
@@ -338,7 +329,6 @@
         paren_or_less_than_full: paren_or_less_than_full {
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
-            label = "PAREN_OR_LESS_THAN_FULL";
             bindings = <&parentesis_full>, <&less_greater_full>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
@@ -346,7 +336,6 @@
         lbkt_or_lbrc_full: lbkt_or_lbrc_full {
             #binding-cells = <0>;
             compatible = "zmk,behavior-mod-morph";
-            label = "lbkt_or_lbrc_full";
             bindings = <&corchetes_full>, <&llaves_full>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
@@ -361,7 +350,6 @@
 
         p_layer_td: p_layer_td {
             compatible = "zmk,behavior-tap-dance";
-            label = "P_LAYER_TD";
             #binding-cells = <0>;
             tapping-term-ms = <200>; // Tiempo en ms para detectar el doble toque. Ajusta si es necesario.
             bindings = <&kp P>, <&tog 8>; // <un toque>, <dos toques>

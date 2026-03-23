@@ -1,2 +1,8 @@
 
 .zmk/
+.west/
+build/
+modules/
+zmk/
+zephyr/
+urchin-zmk-module/
